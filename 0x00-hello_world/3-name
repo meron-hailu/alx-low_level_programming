@@ -1,0 +1,14 @@
+#!/bin/bash
+
+# Save the C file name in a variable
+CFILE="your_c_file_name.c"
+
+# Compile the C file and create an executable named "cisfun"
+gcc $CFILE -o cisfun
+
+# Check if the compilation was successful
+if [ $? -eq 0 ]; then
+    echo "Compilation successful. Executable created: cisfun"
+else
+    echo "Compilation failed"
+fi
