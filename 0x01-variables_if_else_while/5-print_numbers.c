@@ -6,14 +6,11 @@
  **/
 int main(void)
 {
-char c;
-for (c = 'a'; c <= 'z'; c++)
+int i;
+for (i = 0; i <= 9; i++)
 {
-if (c != 'e' && c != 'q')
-{
-putchar(c);
+printf("%d",i);
 }
-}
-putchar('\n');
+printf("\n"); 
 return (0);
 }
