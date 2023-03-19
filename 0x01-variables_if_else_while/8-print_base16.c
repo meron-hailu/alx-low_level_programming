@@ -1,5 +1,4 @@
 #include <stdio.h>
-
 /**
  * main - Entry point
  *
@@ -7,15 +6,15 @@
  */
 int main(void)
 {
-    int num = 48;
-    while (num <= 102)
-    {
-        if (num <= 57 || num >= 97)
-        {
-            putchar(num);
-        }
-        num++;
-    }
-    putchar('\n');
-    return (0);
+int num = 48;
+while (num <= 102)
+{
+if (num <= 57 || num >= 97)
+{
+putchar(num);
+}
+num++;
+}
+putchar('\n');
+return (0);
 }
