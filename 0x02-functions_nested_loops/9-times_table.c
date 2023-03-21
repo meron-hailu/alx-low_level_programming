@@ -1,23 +1,51 @@
+#include <stdio.h>
 #include "main.h"
 /**
-* print_9_times_table - a function which print the 9x table
-* Return: 0
-*/
+ * print_9_times_table - function which prints the 9x table
+ * Return: 0
+ */
 void print_9_times_table(void)
 {
-_putchar("0,..");
-for (int i = 0; i < 10; i++)
+int j;
+int i;
+_putchar('0');
+_putchar(',');
+_putchar('.');
+_putchar('.');
+for (i = 0; i < 10; i++)
 {
-_putchar("%d,..", i);
+_putchar(i + '0');
+_putchar(',');
+_putchar('.');
+_putchar('.');
 }
-_putchar("0$\n");
-for (int i = 0; i < 10; i++)
+_putchar('0');
+_putchar('$');
+_putchar('\n');
+for (i = 0; i < 10; i++)
 {
-_putchar("%d,..", i);
-for (int j = 0; j < 10; j++)
+_putchar(i + '0');
+_putchar(',');
+_putchar('.');
+_putchar('.');
+for (j = 0; j < 10; j++)
 {
-_putchar("%d,..", i * j);
+int prod = i * j;
+if (prod < 10)
+{
+_putchar('0' + prod);
 }
-_putchar("%d$\n", i * 9);
+else
+{
+_putchar('0' + prod / 10);
+_putchar('0' + prod % 10);
+}
+_putchar(',');
+_putchar('.');
+_putchar('.');
+}
+_putchar(i * 9 + '0');
+_putchar('$');
+_putchar('\n');
 }
 }
