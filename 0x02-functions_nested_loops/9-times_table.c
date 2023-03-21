@@ -1,10 +1,10 @@
 #include <stdio.h>
 #include "main.h"
 /**
- * print_9_times_table - function which prints the 9x table
+ * times_table - function which prints the 9x table
  * Return: 0
  */
-void print_9_times_table(void)
+void times_table(void)
 {
 int j;
 int i;
