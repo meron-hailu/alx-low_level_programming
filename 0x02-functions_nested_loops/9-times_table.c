@@ -10,24 +10,17 @@ int j;
 int i;
 _putchar('0');
 _putchar(',');
-_putchar('.');
-_putchar('.');
 for (i = 0; i < 10; i++)
 {
 _putchar(i + '0');
 _putchar(',');
-_putchar('.');
-_putchar('.');
 }
 _putchar('0');
-_putchar('$');
 _putchar('\n');
 for (i = 0; i < 10; i++)
 {
 _putchar(i + '0');
 _putchar(',');
-_putchar('.');
-_putchar('.');
 for (j = 0; j < 10; j++)
 {
 int prod = i * j;
@@ -41,11 +34,8 @@ _putchar('0' + prod / 10);
 _putchar('0' + prod % 10);
 }
 _putchar(',');
-_putchar('.');
-_putchar('.');
 }
 _putchar(i * 9 + '0');
-_putchar('$');
 _putchar('\n');
 }
 }
