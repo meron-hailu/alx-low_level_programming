@@ -11,7 +11,7 @@ if (n > 0 || n == 0)
 _putchar (n % 10 + '0');
 return (n % 10);
 }
-else if
+else if (n == INT_MIN)
 {
 return (88);
 }
