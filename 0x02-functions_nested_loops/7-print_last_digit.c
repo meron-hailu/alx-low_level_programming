@@ -7,19 +7,12 @@
  */
 int print_last_digit(int n)
 {
-if (n > 0 || n == 0)
+int n;
+n = (n % 10);
+if (n < 0)
 {
-_putchar (n % 10 + '0');
-return (n % 10);
+n = (-1 * n);
 }
-else if (n == INT_MIN)
-{
-return (88);
-}
-else
-{
-n = n * -1;
-_putchar (n % 10 + '0');
-return (n % 10);
-}
+_putchar(n + '0');
+return (n);
 }
