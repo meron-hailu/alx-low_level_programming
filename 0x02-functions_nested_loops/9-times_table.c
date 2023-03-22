@@ -24,7 +24,7 @@ else
 {
 _putchar(' ');
 }
-_putchar((d % 10) + '0');
+_putchar((k % 10) + '0');
 if (j < 9)
 {
 _putchar(',');
