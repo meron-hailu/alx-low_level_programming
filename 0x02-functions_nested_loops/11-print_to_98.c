@@ -1,7 +1,7 @@
 #include <stdio.h>
 #include "main.h"
 /**
- * print_to_98: a function that returns from n to 98
+ * print_to_98: a function that prints from n to 98
  * @n: is the int that will use for the argument of the function
  * Return: 0
  */
