@@ -1,8 +1,9 @@
 #include <stdio.h>
 #include "main.h"
 /**
- * print_number is a function which prints an integer
- * @n is an argument of int type
+ * print_number - is a function which prints an integer
+ * @n : is an argument of int type
+ * Return : Always success (0)
  */
 void print_number(int n)
 {
